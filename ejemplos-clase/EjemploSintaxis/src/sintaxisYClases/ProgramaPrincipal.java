@@ -35,17 +35,6 @@ public class ProgramaPrincipal {
 			System.out.println(nro);
 		}
 
-		System.out.println("Ejemplos Clase");
-
-		System.out.println(Padre.MetodoEstatico());
-		Padre objetoPadre = new Padre();
-		System.out.println(objetoPadre.MetodoDeInstancia());
-
-		/*
-		System.out.println(Hijo.MetodoEstatico());
-		Hijo objetoHijo = new Hijo();
-		System.out.println(objetoHijo.MetodoDeInstancia());
-		 */
 	}
 
 }
