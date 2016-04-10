@@ -20,15 +20,15 @@ Ambas carpetas son workspace de eclipse pero fueron excluidos los archivos de ec
 
 ## Temas
 1. *Sintaxis:*
-  1. [Uso de scanner](../ejemplos-clase/UsoDeScanner).
-  2. [Ejemplo de sintaxis](../ejemplos-clase/EjemploSintaxis/src/sintaxisYClases).
-  3. *Ejercicio 1:* [enunciado](../ejercicios/readme.md) y [resolucion](../ejercicios/Ej01MostrarArrayEnOrdenInverso/src).
-  4. *Ejercicio 2:* [enunciado](../ejercicios/readme.md) y [resolucion](../ejercicios/Ej02RegistrarNumerosMayores/src).
+  1. [Uso de scanner](./ejemplos-clase/UsoDeScanner).
+  2. [Ejemplo de sintaxis](./ejemplos-clase/EjemploSintaxis/src/sintaxisYClases).
+  3. *Ejercicio 1:* [enunciado](./ejercicios/readme.md) y [resolucion](./ejercicios/Ej01MostrarArrayEnOrdenInverso/src).
+  4. *Ejercicio 2:* [enunciado](./ejercicios/readme.md) y [resolucion](./ejercicios/Ej02RegistrarNumerosMayores/src).
 
 
 2. *Clases:*
-  1. [Uso básico de clases](../ejemplos-clase/EjemploSintaxis/src/clases).
-  2. [Herencia](../ejemplos-clase/EjemploClases/src/).
+  1. [Uso básico de clases](./ejemplos-clase/EjemploSintaxis/src/clases).
+  2. [Herencia](./ejemplos-clase/EjemploClases/src/).
 
 ### Cursada
 1. Semana 1:

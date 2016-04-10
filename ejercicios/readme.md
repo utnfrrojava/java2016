@@ -1,6 +1,4 @@
-# Clase 3
-
-## Enunciados
+# Enunciados
 
 **Ejercicio 1**
 
