@@ -26,9 +26,10 @@ Ambas carpetas son workspace de eclipse pero fueron excluidos los archivos de ec
   4. *Ejercicio 2:* [enunciado](./ejercicios/readme.md) y [resolucion](./ejercicios/Ej02RegistrarNumerosMayores/src).
 
 
-2. *Clases:*
+2. *Objetos y Clases:*
   1. [Uso básico de clases](./ejemplos-clase/EjemploSintaxis/src/clases).
   2. [Herencia](./ejemplos-clase/EjemploClases/src/).
+  3. *Ejercicio 3:* [enunciado](./ejercicios/readme.md).
 
 ### Cursada
 1. Semana 1:
@@ -48,3 +49,7 @@ Ambas carpetas son workspace de eclipse pero fueron excluidos los archivos de ec
   2. Definir herencia entre clases, boxing y unboxing.
   3. Redefinición de métodos, uso de super y efecto de los constructores en la herencia.
   4. Variables y métodos estáticos y su relación con la herencia de clases.
+
+5. Semana 5:
+  1. Planteo ejercicio 3 y comenzar a resolverlo.
+  2. Tarea: terminar ejercicio 3 para clase siguiente.
