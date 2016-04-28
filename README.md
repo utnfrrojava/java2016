@@ -4,7 +4,7 @@ Este repositorio corresponde a la cátedra de Java UTN FRRo cursada de 2016.
 Aquí podrán encontrar los ejemplos dictados en clase, ejercicios realizados en clase e información relacionada referente a cada tema y material útil relacionado.
 
 ## Novedades de la Cursada
-Aquí se indicarán las fechas de parcial, recuperatorio y globalizador, clases especiales e información relevante para la cursada.
+2016/04/28 - El ***viernes 29/04*** no habrá clases. Debido al paro de los no-docentes no se podrá tener acceso a los laboratorios con lo cual no podrá dictarse la clase.
 
 
 ## Sistema Final
