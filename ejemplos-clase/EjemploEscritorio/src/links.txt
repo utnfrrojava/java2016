@@ -1,0 +1,4 @@
+http://docs.oracle.com/javase/tutorial/uiswing/components/index.html
+http://baro3495.blogspot.com.ar/2013/08/como-utilizar-jinternalframe.html
+http://chuwiki.chuidiang.org/index.php?title=Ejemplo_sencillo_con_JInternalFrame
+https://eclipse.org/windowbuilder/download.php
