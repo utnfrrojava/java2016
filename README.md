@@ -31,13 +31,24 @@ Ambas carpetas son workspace de eclipse pero fueron excluidos los archivos de ec
   2. [Herencia](./ejemplos-clase/EjemploClases/src/).
   3. *Ejercicio 3:* [enunciado](./ejercicios/readme.md).
 
+
+3. *Colecciones*
+  1. [Uso de ArrayList](./ejemplos-clase/EjemploArrayList/src).
+  2. *Ejercicio 4:* [enunciado](./ejercicios/readme.md).
+
+
+4. *Escritorio*
+  1. [Uso de JFrame, JInternalFrame y JOptionPane](./ejemplos-clase/EjemploEscritorio/src/ui).
+
+
+
 ### Cursada
 1. Semana 1:
   1. Uso de IDE y creación de un proyecto java y una clase.
   2. Sintaxis básica (iteración y condicional).
   3. Tarea: Ejercicio 1.
 
-2. Semana 2: Sin actividad por feriado
+2. Semana 2: Sin actividad por feriado.
 
 3. Semana 3:
   1. Resolución ejercicio 1 y 2.
@@ -53,3 +64,22 @@ Ambas carpetas son workspace de eclipse pero fueron excluidos los archivos de ec
 5. Semana 5:
   1. Planteo ejercicio 3 y comenzar a resolverlo.
   2. Tarea: terminar ejercicio 3 para clase siguiente.
+
+6. Semana 6: Corrección resolución ejercicio 3.
+
+7. Semana 7: Sin actividad por paro docente.
+
+8. Semana 8: Sin actividad por mesa de examen.
+
+9. Semana 9:
+  1. Ejemplo de ArrayList.
+  2. Revisión de la API de ArrayList.
+
+10. Semana 10:
+  1. Resolución Ejercicio 4 utilizando ArrayList.
+  2. Tarea: Terminar ejercicio 4.
+
+11. Semana 11:
+  1. Revisión de tecnologías de escritorio.
+  2. Ejemplo de Swing utilizando JFrame y JInternalFrame.
+  3. Uso de controles básicos.

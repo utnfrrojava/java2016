@@ -22,3 +22,8 @@ El sueldo debe calcularse en el método getSueldo() de la siguiente forma:
 * Si es vendedor: sueldoBase + (porcenComision\*totalVtas/100)
 
 Usar un Array de tipo empleado para resolver este ejercicio.
+
+
+**Ejercicio 4**
+
+Resolver los ejercicios 2 y 3 utilizando ArrayList en lugar de arrays.
