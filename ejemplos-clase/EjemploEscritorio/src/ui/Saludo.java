@@ -22,7 +22,7 @@ public class Saludo extends JInternalFrame {
 	 */
 	public Saludo() {
 		super("Saludo", true, true, true, true);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 226, 112);
 		
 		JLabel lblNombre = new JLabel("Nombre:");
 		
