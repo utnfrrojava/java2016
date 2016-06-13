@@ -39,6 +39,10 @@ Ambas carpetas son workspace de eclipse pero fueron excluidos los archivos de ec
 
 4. *Escritorio*
   1. [Uso de JFrame, JInternalFrame y JOptionPane](./ejemplos-clase/EjemploEscritorio/src/ui).
+  2. *Ejercicio 5:* [enunciado](./ejercicios/readme.md).
+
+5. *Capas*
+  1. *Ejercicio 5:* [enunciado](./ejercicios/readme.md).
 
 
 
@@ -83,3 +87,11 @@ Ambas carpetas son workspace de eclipse pero fueron excluidos los archivos de ec
   1. Revisión de tecnologías de escritorio.
   2. Ejemplo de Swing utilizando JFrame y JInternalFrame.
   3. Uso de controles básicos.
+
+12. Semana 12:
+  1. Planteo de arquitectura en capas simple.
+  2. Ejercicio 5, ABMC Simple en Capas.
+
+13. Semana 13: Revisión y corrección del ejercicio 5.
+
+14. Semana 14: Sin actividad por feriado.
