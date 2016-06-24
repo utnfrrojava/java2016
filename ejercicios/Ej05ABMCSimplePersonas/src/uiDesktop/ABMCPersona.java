@@ -4,12 +4,14 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JCheckBox;
 import javax.swing.JButton;
 
 import entidades.*;
 import negocio.*;
+import utils.ApplicationException;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -136,13 +138,27 @@ public class ABMCPersona {
 	}
 
 	protected void modificar() {
-		ctrl.update(MapearDeFormulario());
-		limpiarCampos();
+		try {
+			ctrl.update(MapearDeFormulario());
+			limpiarCampos();
+		} catch (ApplicationException appe) {
+			notifyUser(appe.getMessage());
+		} catch (ArithmeticException are){
+			notifyUser("Ha ocurrido algo inesperado, consulte al administrador de sistemas.");
+		} catch (Exception e){
+			notifyUser("Ha ocurrido algo totalmente inesperado, consulte al administrador de sistemas.");
+		} 
 	}
 
 	protected void agregar() {
-		ctrl.add(MapearDeFormulario());
-		limpiarCampos();
+		if(datosValidos()){
+			try {
+				ctrl.add(MapearDeFormulario());
+				limpiarCampos();
+			} catch (ApplicationException ae) {
+				notifyUser(ae.getMessage());
+			}
+		}
 	}
 
 	private void limpiarCampos() {
@@ -174,5 +190,25 @@ public class ABMCPersona {
 		p.setHabilitado(chckbxHabilitado.isSelected());
 		
 		return p;
+	}
+	
+	public boolean datosValidos(){
+		boolean valido=true;
+		if(txtDni.getText().trim().length()==0
+			|| txtNombre.getText().trim().length()==0
+			|| txtApellido.getText().trim().length()==0){
+			valido=false;
+			notifyUser("Complete todos los campos");
+		}
+		if(valido && !txtDni.getText().matches("[0-9]*")){
+			valido=false;
+			notifyUser("DNI inválido");
+		}
+			
+		return valido;
+	}
+
+	private void notifyUser(String mensaje) {
+		JOptionPane.showMessageDialog(this.frame, mensaje);
 	}
 }
