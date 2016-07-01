@@ -27,6 +27,8 @@ public class CtrlABMCPersona {
 			perEnc.setApellido(p.getApellido());
 			perEnc.setNombre(p.getNombre());
 			perEnc.setHabilitado(p.isHabilitado());
+			//int a=0;
+			//int b=a/a;
 		}else{
 			throw new ApplicationException("La persona no existe");
 		}

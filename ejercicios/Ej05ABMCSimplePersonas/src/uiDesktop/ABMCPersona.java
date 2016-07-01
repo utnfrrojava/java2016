@@ -6,12 +6,16 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+
+import org.apache.logging.log4j.Level;
+
 import javax.swing.JCheckBox;
 import javax.swing.JButton;
 
 import entidades.*;
 import negocio.*;
 import utils.ApplicationException;
+import utils.SuperLogger;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -142,11 +146,11 @@ public class ABMCPersona {
 			ctrl.update(MapearDeFormulario());
 			limpiarCampos();
 		} catch (ApplicationException appe) {
-			notifyUser(appe.getMessage());
+			notifyUser(appe.getMessage(),appe, Level.DEBUG);
 		} catch (ArithmeticException are){
-			notifyUser("Ha ocurrido algo inesperado, consulte al administrador de sistemas.");
+			notifyUser("Ha ocurrido algo inesperado, consulte al administrador de sistemas.", are, Level.ERROR);
 		} catch (Exception e){
-			notifyUser("Ha ocurrido algo totalmente inesperado, consulte al administrador de sistemas.");
+			notifyUser("Ha ocurrido algo totalmente inesperado, consulte al administrador de sistemas.",e, Level.FATAL);
 		} 
 	}
 
@@ -156,7 +160,7 @@ public class ABMCPersona {
 				ctrl.add(MapearDeFormulario());
 				limpiarCampos();
 			} catch (ApplicationException ae) {
-				notifyUser(ae.getMessage());
+				notifyUser(ae.getMessage(),ae, Level.DEBUG);
 			}
 		}
 	}
@@ -207,8 +211,13 @@ public class ABMCPersona {
 			
 		return valido;
 	}
-
+	
 	private void notifyUser(String mensaje) {
 		JOptionPane.showMessageDialog(this.frame, mensaje);
+	}
+
+	private void notifyUser(String mensaje, Exception e, Level l) {
+		notifyUser(mensaje);
+		SuperLogger.logger.log(l, mensaje, e);
 	}
 }
