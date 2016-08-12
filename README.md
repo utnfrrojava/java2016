@@ -6,6 +6,10 @@ Aquí podrán encontrar los ejemplos dictados en clase, ejercicios realizados en
 ## Novedades de la Cursada
 2016/04/28 - El ***viernes 29/04*** no habrá clases. Debido al paro de los no-docentes no se podrá tener acceso a los laboratorios con lo cual no podrá dictarse la clase.
 
+2016/08/12 - Disponible enunciado TP 2016, indicando, tema, etapas, fechas de entrega de cada etapa y metodología de entrega.
+
+## Trabajo Práctico 2016
+En [tp/enunciado2016.md](./tp/enunciado2016.md) se encuentra el enunciado del TP de la cursada 2016.
 
 ## Sistema Final
 Para conocer las condiciones del sistema final referirse al [repositorio general](https://github.com/utnfrrojava/java).
