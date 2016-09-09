@@ -45,7 +45,7 @@ public class CtrlABMCPersona {
 	}
 	
 	public void delete(Persona p){
-		personas.remove(p);
+		dataPer.delete(p);;
 	}
 	
 	public Persona getPersona(Persona p){

@@ -98,6 +98,31 @@ public class DataPersona {
 	}
 	
 	public void delete(Persona p){
+		PreparedStatement stmt=null;
+		
+		try {
+			stmt = FactoryConexion.getInstancia().getConn().prepareStatement(
+					"delete from personas where id=?");
+			stmt.setInt(1, p.getId());
+			stmt.execute();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ApplicationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				if(stmt!=null)stmt.close();
+				FactoryConexion.getInstancia().releaseConn();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (ApplicationException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		
 	}
 	
