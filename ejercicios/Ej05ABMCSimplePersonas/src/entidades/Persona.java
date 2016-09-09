@@ -1,10 +1,20 @@
 package entidades;
 
 public class Persona {
+	private int id;
 	private int dni;
 	private String nombre;
 	private String apellido;
 	private boolean habilitado;
+	
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public int getDni() {
 		return dni;
 	}

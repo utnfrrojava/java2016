@@ -31,6 +31,7 @@ public class ABMCPersona {
 	private JTextField txtNombre;
 	private JTextField txtDni;
 	private JCheckBox chckbxHabilitado;
+	private JTextField txtId;
 
 	/**
 	 * Launch the application.
@@ -66,34 +67,34 @@ public class ABMCPersona {
 		frame.getContentPane().setLayout(null);
 		
 		JLabel lblDni = new JLabel("Dni:");
-		lblDni.setBounds(12, 12, 70, 15);
+		lblDni.setBounds(12, 68, 70, 15);
 		frame.getContentPane().add(lblDni);
 		
 		JLabel lblNombre = new JLabel("Nombre:");
-		lblNombre.setBounds(12, 58, 70, 15);
+		lblNombre.setBounds(12, 114, 70, 15);
 		frame.getContentPane().add(lblNombre);
 		
 		JLabel lblApellido = new JLabel("Apellido:");
-		lblApellido.setBounds(12, 113, 70, 15);
+		lblApellido.setBounds(12, 169, 70, 15);
 		frame.getContentPane().add(lblApellido);
 		
 		txtApellido = new JTextField();
-		txtApellido.setBounds(82, 111, 114, 19);
+		txtApellido.setBounds(82, 167, 114, 19);
 		frame.getContentPane().add(txtApellido);
 		txtApellido.setColumns(10);
 		
 		txtNombre = new JTextField();
-		txtNombre.setBounds(82, 56, 114, 19);
+		txtNombre.setBounds(82, 112, 114, 19);
 		frame.getContentPane().add(txtNombre);
 		txtNombre.setColumns(10);
 		
 		txtDni = new JTextField();
-		txtDni.setBounds(82, 10, 114, 19);
+		txtDni.setBounds(82, 66, 114, 19);
 		frame.getContentPane().add(txtDni);
 		txtDni.setColumns(10);
 		
 		chckbxHabilitado = new JCheckBox("Habilitado");
-		chckbxHabilitado.setBounds(8, 172, 129, 23);
+		chckbxHabilitado.setBounds(8, 228, 129, 23);
 		frame.getContentPane().add(chckbxHabilitado);
 		
 		JButton btnAgregar = new JButton("Agregar");
@@ -103,7 +104,7 @@ public class ABMCPersona {
 				agregar();
 			}
 		});
-		btnAgregar.setBounds(244, 79, 117, 25);
+		btnAgregar.setBounds(244, 135, 117, 25);
 		frame.getContentPane().add(btnAgregar);
 		
 		JButton btnModificar = new JButton("Modificar");
@@ -112,7 +113,7 @@ public class ABMCPersona {
 				modificar();
 			}
 		});
-		btnModificar.setBounds(244, 108, 117, 25);
+		btnModificar.setBounds(244, 164, 117, 25);
 		frame.getContentPane().add(btnModificar);
 		
 		JButton btnEliminar = new JButton("Eliminar");
@@ -122,7 +123,7 @@ public class ABMCPersona {
 				eliminar();
 			}
 		});
-		btnEliminar.setBounds(244, 141, 117, 25);
+		btnEliminar.setBounds(244, 197, 117, 25);
 		frame.getContentPane().add(btnEliminar);
 		
 		JButton btnBuscar = new JButton("Buscar");
@@ -132,8 +133,18 @@ public class ABMCPersona {
 				buscar();
 			}
 		});
-		btnBuscar.setBounds(244, 7, 117, 25);
+		btnBuscar.setBounds(244, 63, 117, 25);
 		frame.getContentPane().add(btnBuscar);
+		
+		JLabel lblId = new JLabel("Id:");
+		lblId.setBounds(12, 28, 70, 15);
+		frame.getContentPane().add(lblId);
+		
+		txtId = new JTextField();
+		txtId.setEnabled(false);
+		txtId.setBounds(82, 26, 114, 19);
+		frame.getContentPane().add(txtId);
+		txtId.setColumns(10);
 	}
 	
 	protected void eliminar() {
@@ -157,8 +168,10 @@ public class ABMCPersona {
 	protected void agregar() {
 		if(datosValidos()){
 			try {
-				ctrl.add(MapearDeFormulario());
-				limpiarCampos();
+				Persona p=MapearDeFormulario();
+				ctrl.add(p);
+				MapearAFormulario(p);
+				//limpiarCampos();
 			} catch (ApplicationException ae) {
 				notifyUser(ae.getMessage(),ae, Level.DEBUG);
 			}
@@ -166,6 +179,7 @@ public class ABMCPersona {
 	}
 
 	private void limpiarCampos() {
+		txtId.setText("");
 		txtDni.setText("");
 		txtApellido.setText("");
 		txtNombre.setText("");
@@ -180,6 +194,7 @@ public class ABMCPersona {
 	}
 
 	public void MapearAFormulario(Persona p){
+		if(p.getId()>0) txtId.setText(String.valueOf(p.getId()));
 		txtDni.setText(String.valueOf( p.getDni()));
 		txtNombre.setText(p.getNombre());
 		txtApellido.setText(p.getApellido());
@@ -188,6 +203,7 @@ public class ABMCPersona {
 	
 	public Persona MapearDeFormulario(){
 		Persona p = new Persona();
+		if(!txtId.getText().isEmpty()) p.setId(Integer.parseInt(txtId.getText()));
 		p.setDni(Integer.parseInt(txtDni.getText()));
 		p.setApellido(txtApellido.getText());
 		p.setNombre(txtNombre.getText());
