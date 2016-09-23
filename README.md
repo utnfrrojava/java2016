@@ -3,6 +3,11 @@ Este repositorio corresponde a la cátedra de Java UTN FRRo cursada de 2016.
 
 Aquí podrán encontrar los ejemplos dictados en clase, ejercicios realizados en clase e información relacionada referente a cada tema y material útil relacionado.
 
+## Grupo de Telegram
+Para notificaciones de último momento pueden utilizar el grupo de Telegram al cual se pueden sumar a través del [link](https://telegram.me/joinchat/EbNGQwqrQLWUUSk8qey0-g).
+
+Se recomienda el uso de [usernames](https://telegram.org/faq#usernames-and-telegram-me) para quienes quieren mantener su número telefónico privado.
+
 ## Novedades de la Cursada
 2016/04/28 - El ***viernes 29/04*** no habrá clases. Debido al paro de los no-docentes no se podrá tener acceso a los laboratorios con lo cual no podrá dictarse la clase.
 

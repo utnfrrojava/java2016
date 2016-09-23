@@ -24,8 +24,8 @@ La aplicación deberá desarrollarse en equipos utilizando un repositorio git us
 
 ##### Fechas de Entrega
 
-- Etapa 1: 7 de Octubre
-- Etapa 2: 11 de Noviembre
+- Etapa 1: 21 de Octubre
+- Etapa 2: 18 de Noviembre
 
 
 ##### Enunciado
