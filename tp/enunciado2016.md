@@ -64,4 +64,4 @@ El juego consiste en 2 personajes enfrentándose en un juego de turnos. Cada jug
 
   * Ganador: El ganador será quien quite todos los puntos de vida del oponente primero. Al finalizar el combate el ganador recibirá como premio 10 puntos para su personaje que se sumarán a los puntos totales que ya tenía para así poder asignarlos luego en la modificación del personaje.
 
-  * Recuperación: Además a cada jugador se le restaurarán los puntos de vida que tenía antes del combate.
+  * Recuperación: Además a cada jugador se le restaurarán los puntos de vida y energía que tenía antes del combate.
