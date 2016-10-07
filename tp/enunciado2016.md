@@ -65,3 +65,22 @@ El juego consiste en 2 personajes enfrentándose en un juego de turnos. Cada jug
   * Ganador: El ganador será quien quite todos los puntos de vida del oponente primero. Al finalizar el combate el ganador recibirá como premio 10 puntos para su personaje que se sumarán a los puntos totales que ya tenía para así poder asignarlos luego en la modificación del personaje.
 
   * Recuperación: Además a cada jugador se le restaurarán los puntos de vida y energía que tenía antes del combate.
+
+###### FAQ:
+  1. **¿De qué modo afecta la defensa al ataque?**  
+  **Respuesta**: Cuando un personaje defiende, se recupera su propia energía durante ese turno y el turno cambia al otro personaje. Es decir en un mismo turno no se puede defender y atacar, debe elegirse una de las dos acciones.
+
+  2. **No comprendo el proceso de evasión, ¿cómo funciona?**
+  **Respuesta**: La formula es (numAleatorio*100)>puntosDeEvasion. Donde el número aleatorio es generado entre 0 y 1. Durante cada ataque se genera un nuevo número aleatorio. De esta forma el numAleatorio*100 genera un valor entre 0 y 100 con una probabilidad uniforme en el intervalo. Ya que los puntos de evasión pueden ser entre 0 y 80 siempre habrá probabilidad de acertar el ataque, por ejemplo:
+    * *Ataque no evadido*:
+      * puntosDeEvasion: **70**.
+      * numAleatorio generado en este ataque: **0.1589002**
+      * cálculo: `numAleatorio*100`: **15.89002**
+      * `(numAleatorio*100)>puntosDeEvasion -> 15.89002>70` es **falso**
+      * Resultado: el personaje que recibe el ataque no lo evade, y se descuenta de los puntos de vida del personaje que recibe los puntos de ataque. Al personaje atacante se le descuentan los puntos de energia usados de su energía restante.
+    * *Ataque evadido*:
+      * puntosDeEvasion: **70**.
+      * numAleatorio generado en este ataque: **0.8722452**
+      * cálculo: `numAleatorio*100`: **87.22452**
+      * `(numAleatorio*100)>puntosDeEvasion -> 87.22452>70` es **verdadero**
+      * Resultado: el personaje que recibe el ataque lo evade el ataque, y no se descuentan puntos de vida. Al personaje atacante igualmente se le descuentan los puntos de energia usados de su energía restante.
