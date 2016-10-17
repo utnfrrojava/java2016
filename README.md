@@ -9,7 +9,7 @@ Para notificaciones de último momento pueden utilizar el grupo de Telegram al c
 Se recomienda el uso de [usernames](https://telegram.org/faq#usernames-and-telegram-me) para quienes quieren mantener su número telefónico privado.
 
 ## Parcial
-El parcial de este año será el jueves 20/10 a las 17 hs en el SUM. El mismo incluira los temas dictados hasta el momento del parcial.
+El parcial del jueves 20/10 a las 17 hs se reprogramará ya que audiovisuales asignó el mismo espacio 2 veces. Aún no se definió la nueva fecha pero será un viernes a las 17 hs.
 
 ## Novedades de la Cursada
 2016/04/28 - El ***viernes 29/04*** no habrá clases. Debido al paro de los no-docentes no se podrá tener acceso a los laboratorios con lo cual no podrá dictarse la clase.
