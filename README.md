@@ -9,7 +9,7 @@ Para notificaciones de último momento pueden utilizar el grupo de Telegram al c
 Se recomienda el uso de [usernames](https://telegram.org/faq#usernames-and-telegram-me) para quienes quieren mantener su número telefónico privado.
 
 ## Parcial
-El parcial se realizará el jueves 4/11 a las 17 hs en el SUM para ambas comisiones.
+El parcial se realizará el viernes 4/11 a las 17 hs en el SUM para ambas comisiones.
 
 ## Novedades de la Cursada
 2016/04/28 - El ***viernes 29/04*** no habrá clases. Debido al paro de los no-docentes no se podrá tener acceso a los laboratorios con lo cual no podrá dictarse la clase.
