@@ -11,6 +11,9 @@ Se recomienda el uso de [usernames](https://telegram.org/faq#usernames-and-teleg
 ## Parcial
 El parcial se realizará el viernes 4/11 a las 17 hs en el SUM para ambas comisiones.
 
+## Recuperatorio
+El recuperatorio se llevará a cabo el miércoles 14/12 a las 18:30 hs en el aula 501 para ambas comisiones.
+
 ## Novedades de la Cursada
 2016/04/28 - El ***viernes 29/04*** no habrá clases. Debido al paro de los no-docentes no se podrá tener acceso a los laboratorios con lo cual no podrá dictarse la clase.
 
@@ -18,6 +21,9 @@ El parcial se realizará el viernes 4/11 a las 17 hs en el SUM para ambas comisi
 
 ## Trabajo Práctico 2016
 En [tp/enunciado2016.md](./tp/enunciado2016.md) se encuentra el enunciado del TP de la cursada 2016.
+
+## Condición Alumnos
+Pueden ver su condición de la cursada en este [link](https://docs.google.com/spreadsheets/d/1-D-xnh30ddUTwVNx_ssyjHFYnQ7yrrxxo5dyM5aSOzY/pubhtml?gid=1492570648&single=true).
 
 ## Sistema Final
 Para conocer las condiciones del sistema final referirse al [repositorio general](https://github.com/utnfrrojava/java).
